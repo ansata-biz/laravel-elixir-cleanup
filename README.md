@@ -1,4 +1,4 @@
-laravel-elixir-del
+laravel-elixir-cleanup
 ====================
 
 Elixir Wrapper Around Gulp Del
@@ -6,12 +6,12 @@ Elixir Wrapper Around Gulp Del
 ```
 var elixir = require('laravel-elixir');
 
-require('laravel-elixir-del');
+require('laravel-elixir-cleanup');
 
 elixir(function (mix) {
     if (mix.production)
     {
-        mix.del("**/*.map");
+        mix.cleanup("**/*.map");
     }
 });
 ```
