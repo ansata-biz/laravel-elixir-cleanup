@@ -1,0 +1,25 @@
+{
+  "name": "laravel-elixir-cleanup",
+  "version": "0.0.1",
+  "description": "Task to cleanup files in public dir, e.g. removing the *.map files for production",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "laravel",
+    "elixir",
+    "del",
+    "remove",
+    "cleanup"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ansata-biz/laravel-elixir-cleanup.git"
+  },
+  "author": "Alexander Gorbatenko",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "del": "~1.2.0"
+  }
+}
