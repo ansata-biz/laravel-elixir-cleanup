@@ -1,11 +1,83 @@
 {
-  "name": "laravel-elixir-cleanup",
-  "version": "0.0.1",
-  "description": "Task to cleanup files in public dir, e.g. removing the *.map files for production",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "_args": [
+    [
+      {
+        "raw": "laravel-elixir-cleanup@git+https://github.com/ansata-biz/laravel-elixir-cleanup.git",
+        "scope": null,
+        "escapedName": "laravel-elixir-cleanup",
+        "name": "laravel-elixir-cleanup",
+        "rawSpec": "git+https://github.com/ansata-biz/laravel-elixir-cleanup.git",
+        "spec": "git+https://github.com/ansata-biz/laravel-elixir-cleanup.git",
+        "type": "hosted",
+        "hosted": {
+          "type": "github",
+          "ssh": "git@github.com:ansata-biz/laravel-elixir-cleanup.git",
+          "sshUrl": "git+ssh://git@github.com/ansata-biz/laravel-elixir-cleanup.git",
+          "httpsUrl": "git+https://github.com/ansata-biz/laravel-elixir-cleanup.git",
+          "gitUrl": "git://github.com/ansata-biz/laravel-elixir-cleanup.git",
+          "shortcut": "github:ansata-biz/laravel-elixir-cleanup",
+          "directUrl": "https://raw.githubusercontent.com/ansata-biz/laravel-elixir-cleanup/master/package.json"
+        }
+      },
+      "/var/www/vhosts/autorentr.com"
+    ]
+  ],
+  "_from": "git+https://github.com/ansata-biz/laravel-elixir-cleanup.git",
+  "_id": "laravel-elixir-cleanup@0.0.1",
+  "_inCache": true,
+  "_location": "/laravel-elixir-cleanup",
+  "_phantomChildren": {
+    "array-uniq": "1.0.3",
+    "each-async": "1.1.1",
+    "inflight": "1.0.6",
+    "inherits": "2.0.3",
+    "is-path-cwd": "1.0.0",
+    "is-path-in-cwd": "1.0.0",
+    "minimatch": "2.0.10",
+    "object-assign": "3.0.0",
+    "once": "1.3.3",
+    "path-is-absolute": "1.0.1",
+    "rimraf": "2.6.1"
   },
+  "_requested": {
+    "raw": "laravel-elixir-cleanup@git+https://github.com/ansata-biz/laravel-elixir-cleanup.git",
+    "scope": null,
+    "escapedName": "laravel-elixir-cleanup",
+    "name": "laravel-elixir-cleanup",
+    "rawSpec": "git+https://github.com/ansata-biz/laravel-elixir-cleanup.git",
+    "spec": "git+https://github.com/ansata-biz/laravel-elixir-cleanup.git",
+    "type": "hosted",
+    "hosted": {
+      "type": "github",
+      "ssh": "git@github.com:ansata-biz/laravel-elixir-cleanup.git",
+      "sshUrl": "git+ssh://git@github.com/ansata-biz/laravel-elixir-cleanup.git",
+      "httpsUrl": "git+https://github.com/ansata-biz/laravel-elixir-cleanup.git",
+      "gitUrl": "git://github.com/ansata-biz/laravel-elixir-cleanup.git",
+      "shortcut": "github:ansata-biz/laravel-elixir-cleanup",
+      "directUrl": "https://raw.githubusercontent.com/ansata-biz/laravel-elixir-cleanup/master/package.json"
+    }
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git+https://github.com/ansata-biz/laravel-elixir-cleanup.git#3e64c161ea1710784d5c5353196ee8353cbb7bf8",
+  "_shasum": "8bcda7223faf4101ca4cc8abb4f18b9573137c1e",
+  "_shrinkwrap": null,
+  "_spec": "laravel-elixir-cleanup@git+https://github.com/ansata-biz/laravel-elixir-cleanup.git",
+  "_where": "/var/www/vhosts/autorentr.com",
+  "author": {
+    "name": "Alexander Gorbatenko"
+  },
+  "bugs": {
+    "url": "https://github.com/ansata-biz/laravel-elixir-cleanup/issues"
+  },
+  "dependencies": {
+    "del": "~1.2.0"
+  },
+  "description": "Task to cleanup files in public dir, e.g. removing the *.map files for production",
+  "devDependencies": {},
+  "gitHead": "3e64c161ea1710784d5c5353196ee8353cbb7bf8",
+  "homepage": "https://github.com/ansata-biz/laravel-elixir-cleanup#readme",
   "keywords": [
     "laravel",
     "elixir",
@@ -13,13 +85,18 @@
     "remove",
     "cleanup"
   ],
+  "license": "BSD-2-Clause",
+  "main": "index.js",
+  "name": "laravel-elixir-cleanup",
+  "optionalDependencies": {},
+  "readme": "laravel-elixir-cleanup\n====================\n\nElixir Wrapper Around Gulp Del\n\n```\nvar elixir = require('laravel-elixir');\n\nrequire('laravel-elixir-cleanup');\n\nelixir(function (mix) {\n    if (mix.production)\n    {\n        mix.cleanup(\"**/*.map\");\n    }\n});\n```\n\nUse this elixir task to remove dev files from your project, e.g. map files",
+  "readmeFilename": "README.md",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ansata-biz/laravel-elixir-cleanup.git"
+    "url": "git+https://github.com/ansata-biz/laravel-elixir-cleanup.git"
   },
-  "author": "Alexander Gorbatenko",
-  "license": "BSD-2-Clause",
-  "dependencies": {
-    "del": "~1.2.0"
-  }
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.0.1"
 }
